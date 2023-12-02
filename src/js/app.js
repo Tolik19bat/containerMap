@@ -1,12 +1,12 @@
 // TODO: write your code here
-// import sum from './basic';
-//
-// console.log('worked');
-//
-// console.log(sum([1, 2]));
+import sum from './basic';
+
+console.log('worked');
+
+console.log(sum([1, 2]));
 
 // ==============================================
- class ErrorRepository {              //создаём класс
+export default class ErrorRepository {              //создаём класс
   constructor() {                     //конструктор
     // Инициализируем Map для хранения кодов ошибок и их описаний
     this.errors = new Map();
@@ -28,14 +28,14 @@
     }
   }
 }
-
-const errorRepo = new ErrorRepository();
-
-// Добавляем ошибки
-errorRepo.addError(404, 'Not Found');
-errorRepo.addError(500, 'Internal Server Error');
-
-// Получаем описание ошибки по её коду
-console.log(errorRepo.translate(404)); // Выведет: Not Found
-console.log(errorRepo.translate(500)); // Выведет: Internal Server Error
-console.log(errorRepo.translate(403)); // Выведет: Unknown error
+//
+// const errorRepo = new ErrorRepository();
+//
+// // Добавляем ошибки
+// errorRepo.addError(404, 'Not Found');
+// errorRepo.addError(500, 'Internal Server Error');
+//
+// // Получаем описание ошибки по её коду
+// console.log(errorRepo.translate(404)); // Выведет: Not Found
+// console.log(errorRepo.translate(500)); // Выведет: Internal Server Error
+// console.log(errorRepo.translate(403)); // Выведет: Unknown error
