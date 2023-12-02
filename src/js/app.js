@@ -7,7 +7,7 @@ console.log(sum([1, 2]));
 
 // ==============================================
 export default class ErrorRepository {              //создаём класс
-  constructor() {                     //конструктор
+  constructor() {                                   //конструктор
     // Инициализируем Map для хранения кодов ошибок и их описаний
     this.errors = new Map();
   }
