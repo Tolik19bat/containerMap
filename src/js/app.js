@@ -36,6 +36,6 @@ export default class ErrorRepository {              //создаём класс
 // errorRepo.addError(500, 'Internal Server Error');
 //
 // // Получаем описание ошибки по её коду
-// console.log(errorRepo.translate(404)); // Выведет: Not Found
-// console.log(errorRepo.translate(500)); // Выведет: Internal Server Error
-// console.log(errorRepo.translate(403)); // Выведет: Unknown error
+// console.log(errorRepo.translate(404)); //Выведет Not Found
+// console.log(errorRepo.translate(500)); //Выведет Internal Server Error
+// console.log(errorRepo.translate(403)); //Выведет Unknown error
